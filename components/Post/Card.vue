@@ -5,22 +5,22 @@
             p {{ data?.content }}
         .media.mt-2
             div(v-if="data?.media?.length === 1")
-                div.rounded-lg.overflow-hidden(class="max-w-[500px]") 
-                    img(src="/images/allShops.jpeg")
+                div.rounded-lg.overflow-hidden(class="max-w-full") 
+                    img(src="/images/allShops.jpeg" class="max-w-full")
             div(v-if="data?.media?.length === 2")
                 .grid.grid-cols-2.gap-2
-                    div.rounded-lg.overflow-hidden(class="max-w-[250px] aspect-[4/7]") 
+                    div.rounded-lg.overflow-hidden(class="max-w-full aspect-[4/7]") 
                         img(src="/images/allShops.jpeg" class="h-full object-cover hover:scale-110 ease-in-out duration-300")
-                    div.rounded-lg.overflow-hidden(class="max-w-[250px] aspect-[4/7]") 
+                    div.rounded-lg.overflow-hidden(class="max-w-full aspect-[4/7]") 
                         img(src="/images/allShops.jpeg"  class="h-full object-cover hover:scale-110 ease-in-out duration-300")
             div(v-if="data?.media?.length > 2")
                 .grid.grid-cols-2.gap-2
-                    div.rounded-lg.overflow-hidden(class="max-w-[250px] aspect-[4/7]") 
+                    div.rounded-lg.overflow-hidden(class="max-w-full aspect-[4/7]") 
                         img(src="/images/allShops.jpeg" class="h-full object-cover hover:scale-110 ease-in-out duration-300")
                     .grid.grid-rows-2(class="aspect-[4/7] gap-2")
-                        div.rounded-lg.overflow-hidden(class="max-w-[250px]") 
+                        div.rounded-lg.overflow-hidden(class="max-w-full") 
                             img(src="/images/allShops.jpeg"  class="h-full w-full object-cover hover:scale-110 ease-in-out duration-300")
-                        div.rounded-lg.overflow-hidden.relative(class="max-w-[250px]") 
+                        div.rounded-lg.overflow-hidden.relative(class="max-w-full") 
                             img(src="/images/allShops.jpeg"  class="h-full w-full object-cover opacity-30 hover:scale-110 ease-in-out duration-300")
                             .more-media.absolute.flex.gap-1.items-center.text-sm
                                 Icon.shrink-0(name="Plus")
