@@ -4,11 +4,14 @@
         template(#prefix) 
           Avatar(src="images/allShops.jpeg")
         template(#actions) 
-          .flex.items-center.gap-3
-            button 
-              Icon(name="UploadImage")
-            button 
-              Icon(name="UploadVideo")
+          .flex.items-center.justify-between
+            .upload.flex.-items-center.gap-3
+              button 
+                Icon(name="UploadImage")
+              button 
+                Icon(name="UploadVideo")
+            .post
+              button.border-2.rounded-lg.px-5.py-1.font-media(name="submitPost" class="border-gray-200 hover:bg-gray-200") Post
       .flex.flex-col.gap-5.mt-5(class="max-w-[500px]")
           div(v-for="post in posts")
               PostCard(:data="post")

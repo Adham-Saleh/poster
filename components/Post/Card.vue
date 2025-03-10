@@ -6,7 +6,7 @@
         .media.mt-2
             div(v-if="data?.media?.length === 1")
                 div.rounded-lg.overflow-hidden(class="max-w-full") 
-                    img(src="/images/allShops.jpeg" class="max-w-full")
+                    img(src="/images/allShops.jpeg" class="max-w-full hover:scale-110 ease-in-out duration-300")
             div(v-if="data?.media?.length === 2")
                 .grid.grid-cols-2.gap-2
                     div.rounded-lg.overflow-hidden(class="max-w-full aspect-[4/7]") 
