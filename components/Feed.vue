@@ -11,7 +11,7 @@
               button 
                 Icon(name="UploadVideo")
             .post
-              button.border-2.rounded-lg.px-5.py-1.font-media(name="submitPost" class="border-gray-200 hover:bg-gray-200") Post
+              button.border-2.rounded-lg.px-5.py-1.font-media(name="submitPost" class="border-gray-200 hover:bg-gray-200" @click="login") Post
       .flex.flex-col.gap-5.mt-5(class="max-w-[500px]")
           div(v-for="post in posts")
               PostCard(:data="post")

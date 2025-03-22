@@ -1,13 +1,13 @@
 <template lang="pug">
-    .container.mx-auto.py-8(class="lg:px-32 px-2")
-        .grid(class="grid-cols-1 md:grid-cols-7  lg:grid-cols-10")
-                div(class="col-span-1 md:col-span-2 hidden md:block")
+    .container.mx-auto.py-8.w-100(class="lg:px-32 px-2")
+        .flex.justify-center.min-w-100
+                div.flex-1(class=" max-w-[250px] py-2 sticky top-0 h-screen hidden md:block")
                     VerticalNavigation(:links)
-                div(class="col-span-1 md:col-span-5")
+                div.flex-1.py-2
                     .flex.justify-center
                         slot
-                div(class="lg:col-span-3 hidden lg:block")
-                  InputText(name="search" placeholder="Search")
+                div.flex-1(class="max-w-[300px] py-2 hidden sticky top-0 h-screen lg:block")
+                  InputText(type="text" name="search" placeholder="Search")
                     template(#prefix) 
                       Icon(name="Search")
                   Card.mt-2
